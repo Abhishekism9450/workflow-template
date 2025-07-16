@@ -1,0 +1,13 @@
+---
+- name: Generate a dummy value
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Set dummy value
+      set_fact:
+        dummy_value: "pending_approval"
+
+    - name: Show dummy value
+      debug:
+        msg: "Generated Value: {{ dummy_value }}"

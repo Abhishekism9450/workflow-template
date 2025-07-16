@@ -1,0 +1,9 @@
+---
+- name: Discard message playbook
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Deployment discarded
+      debug:
+        msg: "Approval Denied. Discarding the process."

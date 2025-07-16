@@ -1,0 +1,9 @@
+---
+- name: Approval message playbook
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Deployment approved
+      debug:
+        msg: "Approval Granted. Proceeding with deployment."
