@@ -7,6 +7,7 @@
     - name: Set dummy value
       set_fact:
         dummy_value: "pending_approval"
+        cacheable: yes
 
     - name: Show dummy value
       debug:
