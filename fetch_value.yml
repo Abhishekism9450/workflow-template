@@ -4,6 +4,6 @@
   gather_facts: false
 
   tasks:
-    - name: Simulate fetching value (ideally passed via extra_vars or stored)
+    - name: fetching value (ideally passed via extra_vars or stored)
       debug:
         msg: "Fetched Value: {{ dummy_value | default('no value passed') }}"
