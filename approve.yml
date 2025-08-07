@@ -6,4 +6,4 @@
   tasks:
     - name: Deployment approved
       debug:
-        msg: "Approval Granted. Proceeding with deployment."
+        msg: "Approved the infra changes. Proceeding with deployment."
